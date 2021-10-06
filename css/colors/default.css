@@ -256,6 +256,10 @@ a.text-primary:focus {
 
 .bg-blue {
     background-color: #3754DB;
+    height: 700px;
+}
+.section {
+    padding: 0px;
 }
 .bg-white {
     background-color: white !important;
@@ -299,6 +303,11 @@ a.text-primary:focus {
     .cover-img {
         background-image: none !important;
         
+    }
+
+    .bg-blue {
+        height: 1000px;
+        text-align: center;
     }
 
 
