@@ -97,13 +97,9 @@
                         </div>
                     </li>
                 </div>
-                <div class="col-lg-4 d-flex flex-column flex-lg-row flex-nowrap h-50">
-                    <div class="join-now-button topnave-btn px-0 py-0 m-0 d-flex">
-                        <a href="sign-up.html" target="" class="btn">Join Now</a>
-                    </div>
                     <!--end login button-->
                     <div class="login-button topnave-btn p-0 px-2 m-0 d-flex">
-                        <a href="login.html" target="" class="btn btn-primary">Login</a>
+                        <a href="login.html" target="" class="btn btn-primary">Logout</a>
                     </div>
                     <!--end login button-->
                 </div>
@@ -235,7 +231,16 @@
     <!-- Back to top -->
 
 
+    <script>
+       function isLoggedIn(params) {
+           const token = window.localStorage.token;
+           if (!token) {
+               window.location = "login.html"
+           }
+       }
 
+       isLoggedIn()
+    </script>
     <!-- javascript -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- SLIDER -->

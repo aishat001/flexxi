@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Flexxi.com/following</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="email" content="" />
+    <meta name="website" content="" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <!-- Slider -->               
+    <link rel="stylesheet" href="css/tiny-slider.css"/> 
+    <!-- Main Css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+</head>
+
+<body>
+    
+    <!-- Navbar STart -->
+    <header id="topnav" class="defaultscroll sticky bg-white">
+        <div class="container-fluid mx-2 px-4">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" height="50" class="logo-light-mode text-light" alt=""><span>FLEXXI</span>
+                <!-- <img src="images/logo-light.png" height="24" class="logo-dark-mode" alt=""> -->
+
+
+            </a>
+
+            <div class="login-button topnave-btn px-4">
+                <a href="login.html" target="" class="btn btn-primary">Login</a>
+            </div><!--end login button-->
+
+            <div class="join-now-button topnave-btn">
+                <a href="sign-up.html" target="" class="btn">Join Now</a>
+            </div><!--end login button-->
+
+            <div class="upload-button topnave-btn">
+                <a href="#" target="" class="btn">Upload</a>
+            </div><!--end login button-->
+
+
+
+
+            <!-- End Logo container-->
+            <div class="menu-extras col-4">
+                <div class="menu-item mx-5">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+    
+            <div id="navigation">
+                <!-- Navigation Menu-->   
+                <ul class="navigation-menu">
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="javascript:void(0)">
+                                <input type="search" id="form1" class="form-control" placeholder="Search articles, templates, tutorials and images"
+                            aria-label="Search" />
+                        </a>
+                    </li>
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="javascript:void(0)">Products</a><span class="menu-arrow"></span>
+                        <ul class="submenu megamenu">
+                            <li>
+                                <ul>
+                                    <li><a href="#" class="sub-menu-item">Articles</a></li>
+                                    <li><a href="#" class="sub-menu-item">Templates</a></li>
+                                    <li><a href="#" class="sub-menu-item">Images</a></li>
+                                    <li><a href="#" class="sub-menu-item">Tutorials</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="javascript:void(0)">Explore</a><span class="menu-arrow"></span>
+                        <ul class="submenu megamenu">
+                            <li>
+                                <ul>
+                                    <li><a href="#" class="sub-menu-item">Articles</a></li>
+                                    <li><a href="#" class="sub-menu-item">Templates</a></li>
+                                    <li><a href="#" class="sub-menu-item">Images</a></li>
+                                    <li><a href="#" class="sub-menu-item">Tutorials</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu parent-parent-menu-item">
+                        <div class="buy-menu-btn d-none m-0">
+                            <a href="#" target="_blank" class="">Upload</a>
+                        </div><!--end login button-->
+                    </li>
+
+                    <li class="has-submenu parent-parent-menu-item">
+                        <div class="buy-menu-btn d-none m-0">
+                            <a href="sign-up.html" target="" class="">Join Now</a>
+                        </div><!--end login button-->
+                    </li>
+                    
+                    <li class="has-submenu parent-parent-menu-item">
+                        
+                <div class="buy-menu-btn d-none m-0">
+                    <a href="login.html" target="_blank" class="btn btn-primary">Login</a>
+                </div><!--end login button-->
+                    </li>
+
+
+                </ul><!--end navigation menu-->
+
+
+            </div><!--end navigation-->
+        </div><!--end container-->
+    </header><!--end header-->
+    <!-- Navbar End -->
+    
+    <!-- first section -->
+    <section class="linked-pages bg-half mt-4">
+        <div class="col-md-12 text-center">
+            <a href="profilePage.html">Profile</a>
+            <a href="getMonetizationPage.html">Monetization</a>
+            <a href="savedpage.html">Saved</a>
+            <a href="startUpload.html">upload</a>
+            <a href="statPage.html">stat</a>
+            <a href="followingPage.html">Following</a>
+            <a href="followersPage.html">followers</a>
+            <a href="settingsPage.html">setting</a>
+        </div>
+    </section>
+
+    <section class="bg-half bg-light w-100 ">
+        <div class="container text-center">
+            <img src="images/FollowingEmptyState.svg" alt="Monetization-off-state">
+            <h4>No Creator here yet!</h4>
+            <p>Show some love to Flexxi creators by following them</p>
+            <a href=""><button class="btn btn-primary" type="submit"> Search Flexxi</button></a>
+        </div>              
+    </section><!--end section-->
+
+
+    <!-- Footer Start -->
+    <footer class="footer footer-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                    <a href="#" class="logo-footer text-light">
+                        <img src="images/logo.png" height="40" alt=""><span> Flexxi </span>
+                    </a>
+                    <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Quam dolor voluptate odit. Temporibus ullam itaque ab, accusantium,
+                          illo ad id quibusdam cumque minima doloribus repellendus. Suscipit dolore eaque quis quo.</p>
+                </div><!--end col-->
+                
+                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h5 class="text-light footer-head">Products</h5>
+                    <ul class="list-unstyled footer-list mt-4">
+                        <li><a href="#" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Aticles</a></li>
+                        <li><a href="#" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Templtes</a></li>
+                        <li><a href="#" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Images</a></li>
+                        <li><a href="#" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Templates</a></li>
+                        <li><a href="#l" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Tutorial</a></li>
+                    </ul>
+                </div><!--end col-->
+                
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h5 class="text-light footer-head">Company</h5>
+                    <ul class="list-unstyled footer-list mt-4">
+                        <li><a href="page-terms.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
+                        <li><a href="page-privacy.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Guides & Help</a></li>
+                        <li><a href="documentation.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Career</a></li>
+                        <li><a href="changelog.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Terms & Policy</a></li>
+                    </ul>
+                </div><!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h5 class="text-light footer-head">Support</h5>
+                    <ul class="list-unstyled footer-list mt-4">
+                        <li><a href="page-terms.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Contact us</a></li>
+                        <li><a href="page-privacy.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> FAQ</a></li>
+                        <li><a href="documentation.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> FAQ</a></li>
+                    </ul>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </footer><!--end footer-->
+    
+    <footer class="footer footer-bar footer-bg">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-start">
+                        <p class="mb-0">Copyright© <script>document.write(new Date().getFullYear())</script> Flexxi <i class="mdi mdi-heart text-danger"></i> by <a href="https://shreethemes.in/" target="_blank" class="text-reset">All right reserved</a>.</p>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <ul class="list-unstyled text-sm-end mb-0">
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social text-light"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social text-light"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social text-light"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social text-light"></i></a></li>
+                    </ul>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </footer><!--end footer-->
+    <!-- Footer End -->
+
+    <!-- Back to top -->
+    <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+    <!-- Back to top -->
+
+    
+
+    <!-- javascript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- SLIDER -->
+    <script src="js/tiny-slider.js "></script>
+    <!-- Icons -->
+    <script src="js/feather.min.js"></script>
+    <!-- Main Js -->
+    <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+    <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+</body>
+</html>

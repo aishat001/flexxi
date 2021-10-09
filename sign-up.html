@@ -78,7 +78,7 @@
                                                             <div class="mb-3">
                                                                 <label class="form-label">Full Name <span class="text-danger">*</span></label>
                                                                 <div class="form-icon position-relative">
-                                                                    <input type="text" class="form-control" placeholder="Enter Full Name" name="fullName" required="">
+                                                                    <input type="text" id="full_name" class="form-control" placeholder="Enter Full Name" name="fullName" required="">
                                                                 </div>
                                                             </div>
                                                         </div><!--end col-->
@@ -87,7 +87,7 @@
                                                             <div class="mb-3">
                                                                 <label class="form-label">Your Email <span class="text-danger">*</span></label>
                                                                 <div class="form-icon position-relative">
-                                                                    <input type="email" class="form-control" placeholder="Type Your Email Address" name="email" required="">
+                                                                    <input type="email" id="email" class="form-control" placeholder="Type Your Email Address" name="email" required="">
                                                                 </div>
                                                             </div>
                                                         </div><!--end col-->
@@ -96,7 +96,7 @@
                                                             <div class="mb-3">
                                                                 <label class="form-label">Password <span class="text-danger">*</span></label>
                                                                 <div class="form-icon position-relative">
-                                                                    <input type="password" class="form-control" placeholder="Type Your Password" required="">
+                                                                    <input type="password" id="password" class="form-control" placeholder="Type Your Password" required="">
                                                                     <p class="mb-0"><small class="text-secondary me-2">Must be atleast 6 characters and in lowercase</small></p>
                                                                 </div>
                                                             </div>
@@ -110,7 +110,7 @@
                                                                 </div>
                                                             </div>
                                                         </div><!--end col-->
-    
+    <p id="errorMessage" class="text-danger"></p>
                                                         <div class="col-md-12">
                                                             <div class="d-grid">
                                                                 <button type="submit" "btn btn-primary">Join Now</button>
@@ -154,21 +154,60 @@
 
 <script>
     const myForm = document.getElementById("myForm");
+    const errorMessage = document.getElementById("errorMessage")
 
     myForm.addEventListener('submit', function(e) {
         e.preventDefault();
 
-        const formData = new FormData(this);
+        
+        let full_name = document.getElementById('full_name').value;
+        let email = document.getElementById('email').value;
+        let password = document.getElementById('password').value;
+
+        let formData = {
+
+            "full_name" : full_name,
+            "email" : email,
+            "password" : password
+        }
+
+        // let initFormData = []
+        // if (localStorage.getItem('users') == null) {
+        //     initFormData.push(FormData)
+        //     localStorage.setItem('users', JSON.stringify(initFormData))
+        // } else {
+        //     initFormData = JSON.parse(localStorage.getItem('users'));
+        //     initFormData.push(initFormData)
+        // }
+        // console.log(initFormData);
+        // alert('registration successful')
+        // window.l
+
 
         fetch('https://flexxi-product.herokuapp.com/api/v1/auth/register', {
             method: 'post',
-            body: formData
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body:JSON.stringify(formData),
         }).then(function (res) {
             return res.text();
-        }).then(function (text) {
-            console.log(text);
+        }).then(function (data) {
+            data = JSON.parse(data);
+            if (data.error) {
+                errorMessage.innerHTML = data.error.password || data.error
+                console.log(data.error.password || data.error)
+            }else{
+                // let token = data.data.token
+                console.log(data.data.token)
+
+                localStorage.setItem('token', data.data.token)
+                window.location = "images.html"
+            }
+            return false
         }).catch(function (error) {
             console.log(error)
+            return false
         })
     })
 

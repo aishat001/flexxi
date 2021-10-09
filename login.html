@@ -92,13 +92,13 @@
                                         <div class="card-body p-0">
                                             <h4 class="card-title text-center">Welcome back, Tade!</h4>  
                                             <p class="card-title text-center">Access all the resources you need</p>  
-                                            <form class="login-form mt-4">
+                                            <form class="login-form mt-4" id="myForm">
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <div class="mb-3">
                                                             <label class="form-label">Your Email <span class="text-danger">*</span></label>
                                                             <div class="form-icon position-relative">
-                                                                <input type="email" class="form-control" placeholder="Type Your Email Address" name="email" required="">
+                                                                <input type="email" class="form-control" id="email" placeholder="Type Your Email Address" name="email" required="">
                                                             </div>
                                                         </div>
                                                     </div><!--end col-->
@@ -107,7 +107,7 @@
                                                         <div class="mb-3">
                                                             <label class="form-label">Password <span class="text-danger">*</span></label>
                                                             <div class="form-icon position-relative">
-                                                                <input type="password" class="form-control" placeholder="Type Your Password" required="">
+                                                                <input type="password" class="form-control" id="password" placeholder="Type Your Password" required="">
                                                                 <p class="mb-0"><small class="text-secondary me-2">Must be atleast 6 characters and in lowercase</small></p>
                                                             </div>
                                                         </div>
@@ -118,7 +118,7 @@
                                                             <p class="forgot-pass mb-0 mr-auto"><a href="password-reset.html" class="text-dark fw-bold">Forgot password ?</a></p>
                                                         </div>
                                                     </div><!--end col-->
-
+<p class="text-danger" id="errorMessage"></pc>
                                                     <div class="col-lg-12 mb-0">
                                                         <div class="d-grid">
                                                             <button class="btn btn-primary">Sign in</button>
@@ -159,6 +159,49 @@
         <!-- Hero End -->
 
         
+
+        <script>
+            const myForm = document.getElementById("myForm");
+            const errorMessage = document.getElementById("errorMessage")
+        
+            myForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+        
+                let email = document.getElementById('email').value;
+                let password = document.getElementById('password').value;
+        
+                let formData = {
+                    "email" : email,
+                    "password" : password
+                }
+        
+        
+        
+                fetch('https://flexxi-product.herokuapp.com/api/v1/auth/login', {
+                    method: 'post',
+                    headers: {
+                      'Content-Type': 'application/json'
+                    },
+                    body:JSON.stringify(formData),
+                }).then(function (res) {
+                    return res.text();
+                }).then(function (data) {
+                    data = JSON.parse(data);
+                    if (data.error) {
+                        errorMessage.innerHTML = data.error.password || data.error
+                        console.log(data.error.password || data.error)
+                    }else{
+                        console.log(data.data.token)
+                        // window.location = ""
+                    }
+                    return false
+                }).catch(function (error) {
+                    console.log(error)
+                    return false
+                })
+            })
+        
+        </script>
 
         <!-- javascript -->
         <script src="js/bootstrap.bundle.min.js"></script>

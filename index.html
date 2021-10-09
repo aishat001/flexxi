@@ -11,7 +11,8 @@
         <meta name="author" content="" />
         <meta name="email" content="" />
         <meta name="website" content="" />
-        <!-- favicon -->
+        <meta name="monetization" content="$ilp.uphold.com/PjXDFiZPej7a">
+                        <!-- favicon -->
         <link rel="shortcut icon" href="images/favicon.ico">
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -23,6 +24,13 @@
         <!-- Main Css -->
         <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+
+        <style>
+            .hidden {
+              display: none;
+            }
+          </style>
+    
     </head>
 
     <body>
@@ -56,9 +64,9 @@
                             <ul class="submenu megamenu">
                                 <li>
                                     <ul>
+                                        <li><a href="login.html" class="sub-menu-item">Images</a></li>
                                         <li><a href="#" class="sub-menu-item">Articles</a></li>
                                         <li><a href="#" class="sub-menu-item">Templates</a></li>
-                                        <li><a href="#" class="sub-menu-item">Images</a></li>
                                         <li><a href="#" class="sub-menu-item">Tutorials</a></li>
                                     </ul>
                                 </li>
@@ -71,7 +79,7 @@
                                     <ul>
                                         <li><a href="#" class="sub-menu-item">Articles</a></li>
                                         <li><a href="#" class="sub-menu-item">Templates</a></li>
-                                        <li><a href="#" class="sub-menu-item">Images</a></li>
+                                        <li><a href="login.html" class="sub-menu-item">Images</a></li>
                                         <li><a href="#" class="sub-menu-item">Tutorials</a></li>
                                     </ul>
                                 </li>
@@ -85,7 +93,7 @@
                                     <ul>
                                         <li><a href="#" class="sub-menu-item">Articles</a></li>
                                         <li><a href="#" class="sub-menu-item">Templates</a></li>
-                                        <li><a href="#" class="sub-menu-item">Images</a></li>
+                                        <li><a href="login.html" class="sub-menu-item">Images</a></li>
                                         <li><a href="#" class="sub-menu-item">Tutorials</a></li>
                                     </ul>
                                 </li>
@@ -93,7 +101,7 @@
                         </li>
                         <li class="upload-button topnave-btn">
                             <div>
-                            <a href="upload-page.html" target="" class="btn text-dark border-dark rounded-5">Upload</a>
+                            <a href="login.html" target="" class="btn text-dark border-dark rounded-5">Upload</a>
                         </div>
                         </li>
                     </div>
@@ -129,7 +137,7 @@
             </div><!--end container-->
         </header><!--end header-->
         <!-- Navbar End -->
-        
+        <p id="exclusive" class="" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis minima obcaecati dolorem numquam officia et atque? Dignissimos et quod facilis ullam quidem natus molestiae atque earum. Delectus, placeat dolore!</p>
         <!-- Hero Start -->
         <section class="bg-half bg-light d-table w-100 bg-blue">
             <div class="container">
@@ -157,7 +165,7 @@
                                 <div class="features-absolute">
                                     <h1 class="text-light mb-4">Flexxi Products</h1>
                                     <div class="row d-flex justify-content-center">
-                                        <div class=" col-10 col-lg-3 col-md-6">
+                                        <div class=" col-10 col-lg-3 col-md-6" >
                                             
                                             <div class="card features feature-clean explore-feature border-0 rounded-md shadow text-center pb-3">
                                                 <div class="position-relative">
@@ -456,7 +464,23 @@
         <!-- Back to top -->
 
         
+<script>
+ 
+    if (document.coil) {
+  document.monetization.addEventListener("monetizationstart", () => {
+    document.getElementById('exclusive').classList.remove('hidden')
 
+    console.log(
+      "🎉 Awesome ! You use Web Monetization.\nMore information https://webmonetization.org"
+    );
+  });
+
+  async function isLoggedIn () {
+  const token = store.get('token')
+  if (!token) return false
+}
+}
+</script>
         <!-- javascript -->
         <script src="js/bootstrap.bundle.min.js"></script>
         <!-- SLIDER -->
