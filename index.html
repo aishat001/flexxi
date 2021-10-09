@@ -38,34 +38,77 @@
         <!-- Loader -->
         
         <!-- Navbar STart -->
-        <header id="topnav" class="defaultscroll sticky bg-white">
-            <div class="container-fluid mx-2 px-4">
+        <header id="topnav" class="defaultscroll sticky bg-white ">
+            <div class="container-fluid mx-2 px-4 d-flex justif-content-between align-items-center">
                 <!-- Logo container-->
-                <a class="logo" href="index.html">
-                    <img src="images/logo.png" height="50" class="logo-light-mode text-light" alt=""><span>FLEXXI</span>
-                    <!-- <img src="images/logo-light.png" height="24" class="logo-dark-mode" alt=""> -->
-
+                <a class="logo col-9 col-sm-5 col-md-3 col-lg-2 col-xl-2" href="index.html">
+                    <img src="images/logo-new.png" height="54" class=" col-3 col-sm-3 col-md-4 logo-light-mode text-light" alt=""><span class="mx-2 primary-default">FLEXXI</span>
 
                 </a>
-
-                <div class="login-button topnave-btn px-4">
-                    <a href="login.html" target="" class="btn btn-primary">Login</a>
-                </div><!--end login button-->
-
-                <div class="join-now-button topnave-btn">
-                    <a href="sign-up.html" target="" class="btn">Join Now</a>
-                </div><!--end login button-->
-
-                <div class="upload-button topnave-btn">
-                    <a href="#" target="" class="btn">Upload</a>
-                </div><!--end login button-->
-
-
-
-
+                
+                <div id="navigation" class="col-md-8 col-lg-10 col-xl-10 d-lg-flex align-items-center justify-content-between p-4 p-lg-0"> <!-- Navigation Menu-->   
+                    <div class="navigation-menu col-9 col-lg-9 align-items-center">
+                        <li class="has-submenu parent-parent-menu-item col-12 col-sm-8 col-md-9 col-lg-4 text-dark">
+                            <a href="javascript:void(0)" class="p-1 form-control" style="min-height:30px !important;" id="form1 d-flex flex-row">
+                                <img src="images/searchicon.png" alt=""/>
+                                <input type="search" class="bg-white border-0 col-10" placeholder="Search for images, articles, templates and tutorials" aria-label="Search" />
+                            </a>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li><a href="#" class="sub-menu-item">Articles</a></li>
+                                        <li><a href="#" class="sub-menu-item">Templates</a></li>
+                                        <li><a href="#" class="sub-menu-item">Images</a></li>
+                                        <li><a href="#" class="sub-menu-item">Tutorials</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)" class="text-dark">Products</a><span class="menu-arrow"></span>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li><a href="#" class="sub-menu-item">Articles</a></li>
+                                        <li><a href="#" class="sub-menu-item">Templates</a></li>
+                                        <li><a href="#" class="sub-menu-item">Images</a></li>
+                                        <li><a href="#" class="sub-menu-item">Tutorials</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)" class="text-dark">Explore</a><span class="menu-arrow"></span>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li><a href="#" class="sub-menu-item">Articles</a></li>
+                                        <li><a href="#" class="sub-menu-item">Templates</a></li>
+                                        <li><a href="#" class="sub-menu-item">Images</a></li>
+                                        <li><a href="#" class="sub-menu-item">Tutorials</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="upload-button topnave-btn">
+                            <div>
+                            <a href="upload-page.html" target="" class="btn text-dark border-dark rounded-5">Upload</a>
+                        </div>
+                        </li>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column flex-lg-row flex-nowrap h-50">
+                        <div class="join-now-button topnave-btn px-0 py-0 m-0 d-flex">
+                            <a href="sign-up.html" target="" class="btn">Join Now</a>
+                            </div><!--end login button-->
+                        <div class="login-button topnave-btn p-0 px-2 m-0 d-flex">
+                        <a href="login.html" target="" class="btn btn-primary">Login</a>
+                        </div><!--end login button-->
+                    </div>
+            </div><!--end navigation-->
                 <!-- End Logo container-->
-                <div class="menu-extras col-4">
-                    <div class="menu-item mx-5">
+                <div class="menu-extras mr-4 col-3 col-sm-7 col-md-9 d-flex flex-row justify-content-end d-lg-none">
+                    <div class="menu-item mx-4">
                         <!-- Mobile menu toggle-->
                         <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
                             <div class="lines">
@@ -78,66 +121,11 @@
                     </div>
                 </div>
         
-                <div id="navigation">
-                    <!-- Navigation Menu-->   
-                    <ul class="navigation-menu">
-                        <li class="has-submenu parent-parent-menu-item">
-                            <a href="javascript:void(0)">
-                                    <input type="search" id="form1" class="form-control" placeholder="Search articles, templates, tutorials and images"
-                                aria-label="Search" />
-                            </a>
-                        </li>
-                        <li class="has-submenu parent-parent-menu-item">
-                            <a href="javascript:void(0)">Products</a><span class="menu-arrow"></span>
-                            <ul class="submenu megamenu">
-                                <li>
-                                    <ul>
-                                        <li><a href="#" class="sub-menu-item">Articles</a></li>
-                                        <li><a href="#" class="sub-menu-item">Templates</a></li>
-                                        <li><a href="#" class="sub-menu-item">Images</a></li>
-                                        <li><a href="#" class="sub-menu-item">Tutorials</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="has-submenu parent-parent-menu-item">
-                            <a href="javascript:void(0)">Explore</a><span class="menu-arrow"></span>
-                            <ul class="submenu megamenu">
-                                <li>
-                                    <ul>
-                                        <li><a href="#" class="sub-menu-item">Articles</a></li>
-                                        <li><a href="#" class="sub-menu-item">Templates</a></li>
-                                        <li><a href="#" class="sub-menu-item">Images</a></li>
-                                        <li><a href="#" class="sub-menu-item">Tutorials</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="has-submenu parent-parent-menu-item">
-                            <div class="buy-menu-btn d-none m-0">
-                                <a href="#" target="_blank" class="">Upload</a>
-                            </div><!--end login button-->
-                        </li>
-
-                        <li class="has-submenu parent-parent-menu-item">
-                            <div class="buy-menu-btn d-none m-0">
-                                <a href="sign-up.html" target="" class="">Join Now</a>
-                            </div><!--end login button-->
-                        </li>
-                        
-                        <li class="has-submenu parent-parent-menu-item">
-                            
-                    <div class="buy-menu-btn d-none m-0">
-                        <a href="login.html" target="_blank" class="btn btn-primary">Login</a>
-                    </div><!--end login button-->
-                        </li>
 
 
-                    </ul><!--end navigation menu-->
 
 
-                </div><!--end navigation-->
+
             </div><!--end container-->
         </header><!--end header-->
         <!-- Navbar End -->
@@ -148,8 +136,8 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 col-12">
                         <div class="title-heading text-light">
-                            <h1 class="fw-bold mt-2 mb-3">All the Resources, <br> you need.</h1>
-                            <p class="para-desc">Access images, articles, tutorials,<br> and templates in minutes..</p>
+                            <h1 class="fw-bold mt-2 mb-3 fs-1">All the Resources, <br> you need.</h1>
+                            <p class="para-desc fs-4">Access images, articles, tutorials,<br> and templates in minutes..</p>
                         </div>
                     </div><!--end col-->
 
@@ -165,10 +153,11 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-12">
+                                <!--Flexxi products  -->
                                 <div class="features-absolute">
                                     <h1 class="text-light mb-4">Flexxi Products</h1>
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-6 col-12">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class=" col-10 col-lg-3 col-md-6">
                                             
                                             <div class="card features feature-clean explore-feature border-0 rounded-md shadow text-center pb-3">
                                                 <div class="position-relative">
@@ -178,7 +167,7 @@
                                                     <img class="card-img-top" src="images/product1.png" alt="Card image cap" height="180" style="object-fit: cover;">
                                                 </div> -->
                     
-                                                <div class="card-body p-0 content">
+                                                <div class="card-body content text-start">
                                                     <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Articles</a></h5>
                                                     <p class="text-muted">Curated shared thoughts from around the world.</p>
                     
@@ -187,12 +176,12 @@
                                             </div>
                                         </div><!--end col-->
                                         
-                                        <div class="col-lg-3 col-md-6 col-12 mt-4 mt-md-0">
+                                        <div class="col-10 col-md-6 col-lg-3  mt-5 mt-md-0">
                                             <div class="card features feature-clean explore-feature border-0 rounded-md shadow text-center pb-3">
                                                 <div class="position-relative text-left">
                                                     <img src="images/product2.jpg" class="card-img-top rounded-top" alt="...">
                                                 </div>
-                                                <div class="card-body p-0 content">
+                                                <div class="card-body text-start content">
                                                     <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Images</a></h5>
                                                     <p class="text-muted">The best photos by talented creators.</p>
                     
@@ -201,13 +190,13 @@
                                             </div>
                                         </div><!--end col-->
                                         
-                                        <div class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0 ">
+                                        <div class="col-10 col-lg-3 col-md-6 mt-5 mt-lg-0 ">
                                             <div class="card features feature-clean explore-feature border-0 rounded-md shadow text-center pb-3">
                                                 <div class="position-relative text-left">
                                                     <img src="images/product3.png" class="card-img-top rounded-top" alt="...">
                                                 </div>
                     
-                                                <div class="card-body p-0 content">
+                                                <div class="card-body content text-start">
                                                     <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Templates</a></h5>
                                                     <p class="text-muted">Improve your workflow with designed templates.</p>
                     
@@ -216,13 +205,13 @@
                                             </div>
                                         </div><!--end col-->
                                         
-                                        <div class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0">
+                                        <div class="col-10 col-lg-3 col-md-6 mt-5 mt-lg-0">
                                             <div class="card features feature-clean explore-feature border-0 rounded-md shadow text-center pb-3">
-                                                <div class="position-relative text-left">
+                                                <div class="position-relative">
                                                     <img src="images/product4.png" class="card-img-top rounded-top" alt="...">
                                                 </div>
                     
-                                                <div class="card-body p-0 content">
+                                                <div class="card-body content text-start">
                                                     <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Tutorials</a></h5>
                                                     <p class="text-muted">Video learning contents for you.</p>
                     
@@ -254,7 +243,7 @@
 
                     <div class="container pb-5 pt-5 mb-md-5">
                         <div class="row d-flex align-items-center">
-                            <div class="col-md-4 col-12 mb-5">
+                            <div class="col-12 col-md-4 mb-5">
                                 <div class="features text-center">
                                     <div class="position-relative">
                                         <img src="images/product5.png" class="card-img-top rounded-top" alt="..." style="object-fit: contain; width: 150px;">
@@ -406,23 +395,20 @@
                         <a href="#" class="logo-footer text-light">
                             <img src="images/logo.png" height="40" alt=""><span> Flexxi </span>
                         </a>
-                        <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                             Quam dolor voluptate odit. Temporibus ullam itaque ab, accusantium,
-                              illo ad id quibusdam cumque minima doloribus repellendus. Suscipit dolore eaque quis quo.</p>
+                        <p class="mt-4">We provide you exclusive articles, images, templates and tutorials at a fee; and also give you the access to monetize your content.</p>
                     </div><!--end col-->
                     
-                    <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <div class="col-lg-2 col-md-4 col-12 mb-5 mb-lg-0">
                         <h5 class="text-light footer-head">Products</h5>
                         <ul class="list-unstyled footer-list mt-4">
                             <li><a href="#" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Aticles</a></li>
-                            <li><a href="#" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Templtes</a></li>
                             <li><a href="#" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Images</a></li>
                             <li><a href="#" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Templates</a></li>
                             <li><a href="#l" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Tutorial</a></li>
                         </ul>
                     </div><!--end col-->
                     
-                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <div class="col-lg-3 col-md-4 col-12 mb-5 mb-lg-0">
                         <h5 class="text-light footer-head">Company</h5>
                         <ul class="list-unstyled footer-list mt-4">
                             <li><a href="page-terms.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
@@ -432,12 +418,11 @@
                         </ul>
                     </div><!--end col-->
 
-                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <div class="col-lg-3 col-md-4 col-12 mb-5 mb-lg-0">
                         <h5 class="text-light footer-head">Support</h5>
                         <ul class="list-unstyled footer-list mt-4">
                             <li><a href="page-terms.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Contact us</a></li>
                             <li><a href="page-privacy.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> FAQ</a></li>
-                            <li><a href="documentation.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> FAQ</a></li>
                         </ul>
                     </div><!--end col-->
                 </div><!--end row-->

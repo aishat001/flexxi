@@ -72,7 +72,7 @@
                                                     <p>Create Your Account in Seconds</p>
                                                 </div>
 
-                                                <form class="login-form mt-4">
+                                                <form class="login-form mt-4" id="myForm">
                                                     <div class="row p-4 pt-0">
                                                         <div class="col-md-12">
                                                             <div class="mb-3">
@@ -113,9 +113,10 @@
     
                                                         <div class="col-md-12">
                                                             <div class="d-grid">
-                                                                <button class="btn btn-primary">Join Now</button>
+                                                                <button type="submit" "btn btn-primary">Join Now</button>
                                                             </div>
-                                                        </div><!--end col-->
+                                                        </div>
+                                                        <!--end col-->
     
                                                         <div class="col-lg-12 mt-4 text-center">
                                                             <h6>Or Join using</h6>
@@ -151,6 +152,27 @@
 
         
 
+<script>
+    const myForm = document.getElementById("myForm");
+
+    myForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const formData = new FormData(this);
+
+        fetch('https://flexxi-product.herokuapp.com/api/v1/auth/register', {
+            method: 'post',
+            body: formData
+        }).then(function (res) {
+            return res.text();
+        }).then(function (text) {
+            console.log(text);
+        }).catch(function (error) {
+            console.log(error)
+        })
+    })
+
+</script>
         <!-- javascript -->
         <script src="js/bootstrap.bundle.min.js"></script>
         <!-- Icons -->
@@ -158,5 +180,8 @@
         <!-- Main Js -->
         <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
         <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+        <script>
+
+        </script>
     </body>
 </html>

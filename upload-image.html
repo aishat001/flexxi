@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Flexxi.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="email" content="" />
+    <meta name="website" content="" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <!-- Slider -->
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <!-- Main Css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+</head>
+
+<body class="bg-light">
+    <!-- Loader -->
+    <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+    <!-- Loader -->
+
+    <!-- Navbar STart -->
+    <header id="topnav" class="defaultscroll sticky bg-white ">
+        <div class="container-fluid mx-2 px-4 d-flex justif-content-between align-items-center">
+            <!-- Logo container-->
+            <a class="logo col-9 col-sm-5 col-md-3 col-lg-2 col-xl-2" href="index.html">
+                    <img src="images/logo-new.png" height="54" class=" col-3 col-sm-3 col-md-4 logo-light-mode text-light" alt=""><span class="mx-2 primary-default">FLEXXI</span>
+
+                </a>
+
+            <div id="navigation" class="col-md-8 col-lg-9 d-lg-flex align-items-center justify-content-between p-4 p-lg-0">
+                <!-- Navigation Menu-->
+                <div class="navigation-menu col-9 col-lg-9 align-items-center">
+                    <li class="has-submenu parent-parent-menu-item col-12 col-sm-8 col-md-9 col-lg-4 text-dark">
+                        <a href="javascript:void(0)" class="p-1 form-control" style="min-height:30px !important;" id="form1 d-flex flex-row">
+                                <img src="images/searchicon.png" alt=""/>
+                                <input type="search" class="bg-white border-0 col-10" placeholder="Search for images, articles, templates and tutorials" aria-label="Search" />
+                            </a>
+                        <ul class="submenu megamenu">
+                            <li>
+                                <ul>
+                                    <li><a href="#" class="sub-menu-item">Articles</a></li>
+                                    <li><a href="#" class="sub-menu-item">Templates</a></li>
+                                    <li><a href="#" class="sub-menu-item">Images</a></li>
+                                    <li><a href="#" class="sub-menu-item">Tutorials</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="javascript:void(0)" class="text-dark">Products</a><span class="menu-arrow"></span>
+                        <ul class="submenu megamenu">
+                            <li>
+                                <ul>
+                                    <li><a href="#" class="sub-menu-item">Articles</a></li>
+                                    <li><a href="#" class="sub-menu-item">Templates</a></li>
+                                    <li><a href="#" class="sub-menu-item">Images</a></li>
+                                    <li><a href="#" class="sub-menu-item">Tutorials</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="javascript:void(0)" class="text-dark">Explore</a><span class="menu-arrow"></span>
+                        <ul class="submenu megamenu">
+                            <li>
+                                <ul>
+                                    <li><a href="#" class="sub-menu-item">Articles</a></li>
+                                    <li><a href="#" class="sub-menu-item">Templates</a></li>
+                                    <li><a href="#" class="sub-menu-item">Images</a></li>
+                                    <li><a href="#" class="sub-menu-item">Tutorials</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="col-lg-4 d-flex flex-column flex-lg-row flex-nowrap h-50 justify-content-end">
+                    <!--end login button-->
+                    <div class="login-button p-0 px-2 m-0 d-flex">
+                        <img src="images/p-image.png" alt="" />
+                    </div>
+                    <!--end login button-->
+                </div>
+            </div>
+            <!--end navigation-->
+            <!-- End Logo container-->
+            <div class="menu-extras mr-4 col-3 col-sm-7 col-md-9 d-flex flex-row justify-content-end d-lg-none">
+                <div class="menu-item mx-4">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+        <!--end container-->
+    </header>
+    <!--end header-->
+    <!-- Navbar End -->
+
+
+
+    <!-- Hero Start -->
+    <section class=" bg-light d-table w-100" style="padding:80px 30px;">
+        <div class="container mt-100 mt-60 mb-4 text-center">
+            <div class="row col-lg-8 m-auto">
+                <h1 class="text-bold fs-2">Upload Images, Templates & Tutorials </h1>
+                <ul class="list-unstyled footer-list mt-4 text-start">
+                    <li class="mb-2"><i class="uil uil-angle-right-b me-1"></i>Images: PNG, JPG, SVG, and PSD are supported file formats.
+                        Your image should be atleast 5MB and not more than 40MB. </a>
+                    </li>
+                    <li class="mb-2"><i class="uil uil-angle-right-b me-1"></i>Templates: PDF and PPT are supported file formats. Your file
+                        should be atleast 5MB..</a>
+                    </li>
+                    <li class="mb-2"><i class="uil uil-angle-right-b me-1"></i> Tutorials: MOV and MPEG are supported file formats. Your file
+                        should be up to 300MB and not less than 60 seconds.</a>
+                    </li>
+                    <li class="mb-2">Check out our submission <a href="#" class="text-dark">guidelines here.<i class="uil uil-angle-right-b me-1"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-5 text-center">
+            <form>
+                <div class="file-drop-area col-10 col-sm-8 col-md-5 m-auto">
+                    <div class="fileUpload btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        <span>Browse</span>
+                        <input type="file" id="exampleInputFile" class="upload">
+                    </div>
+                    <span class="file-message">or drag and drop files here</span>>
+
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+    <!--end section-->
+
+
+    <!--end row-->
+    </div>
+    <!--end container-->
+    </section>
+
+
+        <div class="container text-center mt-100 mb-5">
+            <div class="row d-flex flex-column flex-md-row align-items-center justify-content-center"> 
+                                <a href="" class="btn border-dark col-7 col-md-3 mb-3 mb-md-0 mx-3">Upload Later</a>
+                                <a href="" class="btn btn-primary col-7 col-md-3 mx-3">Upload now</a>
+
+            </div>
+        </div>
+        <!--end container-->
+
+
+    <!-- Back to top -->
+    <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+    <!-- Back to top -->
+
+
+
+    <!-- javascript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- SLIDER -->
+    <script src="js/tiny-slider.js "></script>
+    <!-- Icons -->
+    <script src="js/feather.min.js"></script>
+    <!-- Main Js -->
+    <script src="js/plugins.init.js"></script>
+    <!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+    <script src="js/app.js">
+  
+    </script>
+    <!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+</body>
+
+</html>
