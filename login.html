@@ -192,7 +192,9 @@
                         console.log(data.error.password || data.error)
                     }else{
                         console.log(data.data.token)
-                        // window.location = ""
+                        localStorage.setItem('token', data.data.token)
+
+                        window.location = "images.html"
                     }
                     return false
                 }).catch(function (error) {

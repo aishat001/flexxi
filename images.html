@@ -10,6 +10,9 @@
     <meta name="author" content="" />
     <meta name="email" content="" />
     <meta name="website" content="" />
+    <!-- <meta name="monetization" content="$ilp.uphold.com/pjXfjJ4KR7L6"> -->
+    <meta name="monetization" content="$ilp.uphold.com/PjXDFiZPej7a">
+
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico">
     <!-- Bootstrap -->
@@ -19,6 +22,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
     <!-- Slider -->
     <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/imagescard.css" />
     <!-- Main Css -->
     <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
     <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
@@ -99,7 +103,7 @@
                 </div>
                     <!--end login button-->
                     <div class="login-button topnave-btn p-0 px-2 m-0 d-flex">
-                        <a href="login.html" target="" class="btn btn-primary">Logout</a>
+                        <a href="index.html" target="" class="btn btn-primary">Logout</a>
                     </div>
                     <!--end login button-->
                 </div>
@@ -135,11 +139,46 @@
                 <div class="">
 
                 </div>
-                <div class="All-images">
-                    <h2>Similar images</h2>
-                </div>
-                    <imga
-            </div>
+                <div class="wrapper-grey padded">
+                    <div class="container">
+                      <h2 class="text-center">Your next trip</h2>
+                      <div class="col-12 d-flex">
+                          <div class="card d0flex justify-content-end" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img1.jpg');">
+                              <div class=" row col-12 d-flex" >
+                                <div class="mb-3 mx-3">Title</div>
+                                <div class="card-description d-flex flex-row justify-content-between">
+                                    <div class="d-flex col-5">
+                                        <img src="images/p-image.png" width="30%">
+                                        <h5 class="user-name m-0" id="username">name</h5>
+                                    </div>
+                                <div class="d-flex justify-content-end col-5"> 
+                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/download.png"/></a>
+                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/like.png"/></a>
+
+                                </div>
+                                </div>
+                              </div>  
+                          </div>
+                          <div class="card d0flex justify-content-end" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img1.jpg');">
+                              <div class=" row col-12 d-flex" >
+                                <div class="mb-3 mx-3">Title</div>
+                                <div class="card-description d-flex flex-row justify-content-between">
+                                    <div class="d-flex col-5">
+                                        <img src="images/p-image.png" width="30%">
+                                        <h5 class="user-name m-0" id="username">name</h5>
+                                    </div>
+                                <div class="d-flex justify-content-end col-5"> 
+                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/download.png"/></a>
+                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/like.png"/></a>
+
+                                </div>
+                                </div>
+                              </div>  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -232,15 +271,21 @@
 
 
     <script>
-       function isLoggedIn(params) {
-           const token = window.localStorage.token;
-           if (!token) {
-               window.location = "login.html"
-           }
-       }
 
-       isLoggedIn()
+ console.log(document)
+    if (document.monetization) {
+  document.monetization.addEventListener("monetizationstart", () => {
+    // document.getElementById('exclusive').classList.remove('hidden')
+
+    console.log(
+      "🎉 Awesome ! You use Web Monetization.\nMore information https://webmonetization.org"
+    );
+  });
+    }
+  
+        
     </script>
+    
     <!-- javascript -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- SLIDER -->
