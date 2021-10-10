@@ -42,8 +42,8 @@
     <!-- Loader -->
 
     <!-- Navbar STart -->
-    <header id="topnav" class="defaultscroll sticky bg-white ">
-        <div class="container-fluid mx-2 px-4 d-flex justif-content-between align-items-center">
+    <header id="topnav" class="defaultscroll sticky bg-white d-flex justify-content-between">
+        <div class="container-fluid col-sm-8 col-md-10 col-lg-11 mx-2 m-md-auto px-2 d-flex justif-content-between align-items-center">
             <!-- Logo container-->
             <a class="logo col-9 col-sm-5 col-md-3 col-lg-2 col-xl-2" href="index.html">
                     <img src="images/logo-new.png" height="54" class=" col-3 col-sm-3 col-md-4 logo-light-mode text-light" alt=""><span class="mx-2 primary-default">FLEXXI</span>
@@ -69,7 +69,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="has-submenu parent-parent-menu-item">
+                    <li class="p-display has-submenu parent-parent-menu-item">
                         <a href="javascript:void(0)" class="text-dark">Products</a><span class="menu-arrow"></span>
                         <ul class="submenu megamenu">
                             <li>
@@ -82,8 +82,27 @@
                             </li>
                         </ul>
                     </li>
-
-                    <li class="has-submenu parent-parent-menu-item">
+                    <li class="t-display upload-button topnave-btn">
+                        <div>
+                            <a href="login.html" target="" class="btn text-dark">Images</a>
+                        </div>
+                    </li>                    
+                    <li class="t-display upload-button topnave-btn">
+                        <div>
+                            <a href="#" target="" class="btn text-dark">Templates</a>
+                        </div>
+                    </li>
+                    <li class="t-display upload-button topnave-btn">
+                        <div>
+                            <a href="#" target="" class="btn text-dark">Articles</a>
+                        </div>
+                    </li>
+                    <li class="t-display upload-button topnave-btn">
+                        <div>
+                            <a href="#" target="" class="btn text-dark ">Tutorials</a>
+                        </div>
+                    </li>
+                    <li class="p-display has-submenu parent-parent-menu-item">
                         <a href="javascript:void(0)" class="text-dark">Explore</a><span class="menu-arrow"></span>
                         <ul class="submenu megamenu">
                             <li>
@@ -103,7 +122,7 @@
                     </li>
                 </div>
                     <!--end login button-->
-                    <div class="login-button topnave-btn p-0 px-2 m-0 d-flex">
+                    <div class="login-button topnave-btn p-0 px-2 m-0 d-flex float-left">
                         <a href="index.html" target="" class="btn btn-primary">Logout</a>
                     </div>
                     <!--end login button-->
@@ -111,7 +130,7 @@
             </div>
             <!--end navigation-->
             <!-- End Logo container-->
-            <div class="menu-extras mr-4 col-3 col-sm-7 col-md-9 d-flex flex-row justify-content-end d-lg-none">
+            <div class="menu-extras mr-4 col-3 col-sm-4 col-md-2 d-flex flex-row justify-content-end d-lg-none">
                 <div class="menu-item mx-4">
                     <!-- Mobile menu toggle-->
                     <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
@@ -137,12 +156,11 @@
     <section>
         <div class="container mt-100">
             <div class="row">
-                <div class="">
-
-                </div>
+                <h4 class="card-title text-center">Welcome!!!</h4>  
+                <p class="card-title text-center">Access all the resources you need</p>  
                 <div class="wrapper padded">
                     <div class="container">
-                      <h2 class="text-center">Your next trip</h2>
+                      <h2 class="text-center">All Images</h2>
                       <div class="col-12 d-flex flex-column flex-sm-column flex-md-row flex-wrap justify-content-center align-items-center">
                           <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img1.jpg');">
                               <div class=" row col-12 d-flex" >
@@ -368,6 +386,22 @@
                               </div>  
                           </div>
                           <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img14.jpg');">
+                            <div class=" row col-12 d-flex" >
+                                <div class="mb-3 mx-3">Title</div>
+                                <div class="card-description d-flex flex-row justify-content-between">
+                                    <div class="d-flex col-5">
+                                        <img src="images/p-image.png" width="30%">
+                                        <h5 class="user-name m-0" id="username">name</h5>
+                                    </div>
+                                <div class="d-flex justify-content-end col-5"> 
+                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/download.png"/></a>
+                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/like.png"/></a>
+
+                                </div>
+                                </div>
+                              </div>  
+                          </div>
+                          <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img15.jpg');">
                             <div class=" row col-12 d-flex" >
                                 <div class="mb-3 mx-3">Title</div>
                                 <div class="card-description d-flex flex-row justify-content-between">

@@ -387,6 +387,15 @@ box-shadow:
     .reset-form {
         height: 500px !important;
     }
+    .p-display {
+        display: none !important;
+    }
+
+}
+@media (min-width:991px) {
+    .t-display {
+        display: none !important;
+    }
 }
 
 @media (min-width: 768px) {
