@@ -329,6 +329,13 @@ box-shadow:
     opacity: 0;
     filter: alpha(opacity=0);
 }
+.contentsNav {
+    position: relative !important;
+    z-index: 999;
+    background-color: transparent;
+    border: 0;
+    transition: all .5s ease;
+}
 
 @media (max-width: 465px) {
     .login-alreadylogin {
@@ -396,6 +403,7 @@ box-shadow:
     .t-display {
         display: none !important;
     }
+
 }
 
 @media (min-width: 768px) {

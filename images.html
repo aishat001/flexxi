@@ -10,9 +10,8 @@
     <meta name="author" content="" />
     <meta name="email" content="" />
     <meta name="website" content="" />
-    <meta name="monetization" content="$ilp.uphold.com/pjXfjJ4KR7L6">
-    <!-- http://ilp.uphold.com/qnWB9xMZXhiP -->
-    <!-- <meta name="monetization" content="$ilp.uphold.com/qnWB9xMZXhiP"> -->
+    <meta name="monetization" content="$webmonetization.org/api/receipts/%24ilp.uphold.com%2FpjXfjJ4KR7L6" />
+
 
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -27,37 +26,54 @@
     <!-- Main Css -->
     <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
     <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .visible {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Loader -->
-    <!-- <div id="preloader">
-            <div id="status">
-                <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                </div>
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
             </div>
-        </div> -->
+        </div>
+    </div>
     <!-- Loader -->
 
     <!-- Navbar STart -->
     <header id="topnav" class="defaultscroll sticky bg-white d-flex justify-content-between">
-        <div class="container-fluid col-sm-8 col-md-10 col-lg-11 mx-2 m-md-auto px-2 d-flex justif-content-between align-items-center">
+        <div
+            class="container-fluid col-sm-8 col-md-10 col-lg-11 mx-2 m-md-auto px-2 d-flex justif-content-between align-items-center">
             <!-- Logo container-->
             <a class="logo col-9 col-sm-5 col-md-3 col-lg-2 col-xl-2" href="index.html">
-                    <img src="images/logo-new.png" height="54" class=" col-3 col-sm-3 col-md-4 logo-light-mode text-light" alt=""><span class="mx-2 primary-default">FLEXXI</span>
+                <img src="images/logo-new.png" height="54" class=" col-3 col-sm-3 col-md-4 logo-light-mode text-light"
+                    alt=""><span class="mx-2 primary-default">FLEXXI</span>
 
-                </a>
+            </a>
 
-            <div id="navigation" class="col-md-8 col-lg-10 col-xl-10 d-lg-flex align-items-center justify-content-between p-4 p-lg-0">
+            <div id="navigation"
+                class="col-md-8 col-lg-10 col-xl-10 d-lg-flex align-items-center justify-content-between p-4 p-lg-0">
                 <!-- Navigation Menu-->
                 <div class="navigation-menu col-9 col-lg-9 align-items-center">
                     <li class="has-submenu parent-parent-menu-item col-12 col-sm-8 col-md-9 col-lg-4 text-dark">
-                        <a href="javascript:void(0)" class="p-1 form-control" style="min-height:30px !important;" id="form1 d-flex flex-row">
-                                <img src="images/searchicon.png" alt=""/>
-                                <input type="search" class="bg-white border-0 col-10" placeholder="Search for images, articles, templates and tutorials" aria-label="Search" />
-                            </a>
+                        <a href="javascript:void(0)" class="p-1 form-control" style="min-height:30px !important;"
+                            id="form1 d-flex flex-row">
+                            <img src="images/searchicon.png" alt="" />
+                            <input type="search" class="bg-white border-0 col-10"
+                                placeholder="Search for images, articles, templates and tutorials"
+                                aria-label="Search" />
+                        </a>
                         <ul class="submenu megamenu">
                             <li>
                                 <ul>
@@ -86,7 +102,7 @@
                         <div>
                             <a href="login.html" target="" class="btn text-dark">Images</a>
                         </div>
-                    </li>                    
+                    </li>
                     <li class="t-display upload-button topnave-btn">
                         <div>
                             <a href="#" target="" class="btn text-dark">Templates</a>
@@ -121,28 +137,35 @@
                         </div>
                     </li>
                 </div>
-                    <!--end login button-->
-                    <div class="login-button topnave-btn p-0 px-2 m-0 d-flex float-left">
-                        <a href="index.html" target="" class="btn btn-primary">Logout</a>
+                <!--end login button-->
+                <div class="login-button topnave-btn p-0 px-2 m-0 d-flex float-left">
+                    <a href="index.html" target="" class="btn btn-primary">Logout</a>
+                </div>
+                <div class="col-1 d-flex flex-column flex-lg-row flex-nowrap h-50 justify-content-end">
+                    <!--end profile -->
+                    <div class="login-button p-0 px-2 m-0 d-flex">
+                        <img src="images/p-image.png" alt="" />
                     </div>
-                    <!--end login button-->
+                    <!--end profile -->
                 </div>
+                <!--end login button-->
             </div>
-            <!--end navigation-->
-            <!-- End Logo container-->
-            <div class="menu-extras mr-4 col-3 col-sm-4 col-md-2 d-flex flex-row justify-content-end d-lg-none">
-                <div class="menu-item mx-4">
-                    <!-- Mobile menu toggle-->
-                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
-                        <div class="lines">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </a>
-                    <!-- End mobile menu toggle-->
-                </div>
+        </div>
+        <!--end navigation-->
+        <!-- End Logo container-->
+        <div class="menu-extras mr-4 col-3 col-sm-4 col-md-2 d-flex flex-row justify-content-end d-lg-none">
+            <div class="menu-item mx-4">
+                <!-- Mobile menu toggle-->
+                <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+                <!-- End mobile menu toggle-->
             </div>
+        </div>
 
 
         </div>
@@ -156,273 +179,476 @@
     <section>
         <div class="container mt-100">
             <div class="row">
-                <h4 class="card-title text-center">Welcome!!!</h4>  
-                <p class="card-title text-center">Access all the resources you need</p>  
-                <div class="wrapper padded">
+                <div>
+                    <h1 class="card-title text-center">Welcome!!!</h1>
+                </div>
+                <div class="wrapper py-5">
                     <div class="container">
-                      <h2 class="text-center">All Images</h2>
-                      <div class="col-12 d-flex flex-column flex-sm-column flex-md-row flex-wrap justify-content-center align-items-center">
-                          <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img1.jpg');">
-                              <div class=" row col-12 d-flex" >
-                                <div class="mb-3 mx-3">Title</div>
-                                <div class="card-description d-flex flex-row justify-content-between">
-                                    <div class="d-flex col-5">
-                                        <img src="images/p-image.png" width="30%">
-                                        <h5 class="user-name m-0" id="username">name</h5>
-                                    </div>
-                                <div class="d-flex justify-content-end col-5"> 
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/download.png"/></a>
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/like.png"/></a>
-
+                        <div class="row d-flex flex-colum flex-lg-row mb-100 justify-content-center mb-5 col-12">
+                            <div class="col-10 col-lg-4 text-center text-lg-left px-3">
+                                <h4 class="card-title">6,401 Images</h4>
+                                <p class="card-title">Take a look at the full collection to get your
+                                    creativity flowing.</p>
+                            </div>
+                            <!-- <div id="topnav"
+                                class="defaultscroll col-6 bg-white d-flex justify-content-center contentsNav shadow-none">
+                                <div class="navigation-menu align-items-center mt-3">
+                                    <li class=" has-submenu parent-parent-menu-item">
+                                        <a href="javascript:void(0)" class="text-dark">Latests</a><span
+                                            class="menu-arrow"></span>
+                                        <ul class="submenu megamenu d-md-flex">
+                                <li>
+                                    <ul>
+                                        <li><a href="#" class="sub-menu-item">#</a></li>
+                                        <li><a href="#" class="sub-menu-item">#</a></li>
+                                        <li><a href="#" class="sub-menu-item">#</a></li>
+                                        <li><a href="#" class="sub-menu-item">#</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                                    </li>
+                                    <li class=" has-submenu parent-parent-menu-item">
+                                        <a href="images.html" class="text-dark">Images</a><span
+                                            class="menu-arrow"></span>
+                                        <!-- <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li><a href="#" class="sub-menu-item">#</a></li>
+                                        <li><a href="#" class="sub-menu-item">#</a></li>
+                                        <li><a href="#" class="sub-menu-item">#</a></li>
+                                        <li><a href="#" class="sub-menu-item">#</a></li>
+                                    </ul>
+                                </li>
+                            </ul> -->
+                                    <!-- </li>
+                                    <li class=" has-submenu parent-parent-menu-item">
+                                        <a href="javascript:void(0)" class="text-dark pr-5">Categories</a><span
+                                            class="menu-arrow"></span>
+                                        <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li><a href="#" class="sub-menu-item">#</a></li>
+                                        <li><a href="#" class="sub-menu-item">#</a></li>
+                                        <li><a href="#" class="sub-menu-item">#</a></li>
+                                        <li><a href="#" class="sub-menu-item">#</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                                    </li>
+                                    <li class=" has-submenu parent-parent-menu-item">
+                                        <a href="javascript:void(0)" class="text-dark">Prices</a><span
+                                            class="menu-arrow"></span>
+                                        <!-- <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li><a href="#" class="sub-menu-item">#</a></li>
+                                        <li><a href="#" class="sub-menu-item">#</a></li>
+                                        <li><a href="#" class="sub-menu-item">#</a></li>
+                                        <li><a href="#" class="sub-menu-item">#</a></li>
+                                    </ul>
+                                </li>
+                            </ul> -->
+                                    <!-- </li>
                                 </div>
-                                </div>
-                              </div>  
-                          </div>
-                          <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img15.jpg');">
-
-                          <div 
-  class="exclusive" 
-  id="yabc6vmpvmk"
-  paymentpointer="$ilp.uphold.com/pjXfjJ4KR7L6"
-  proxypaymentpointer="https://aishat001.github.io/flexxi/images.html/%24ilp.uphold.com%2FpjXfjJ4KR7L6"
-  cyphertext="2gx9JQFSEVXF7sdhziC9DBz0TazBMJK/A5e5pC6pE0daWYIHnxK0BO3OW9V0D9N8fEgttM8CfDFCDm/deTajnlZQ0y7/WKrycB47WP5fED7C2sRUrvAmJ1xzimlhBbEkP4Idl9Jcj6WuJg3Ey3vuoYDEJDk81hwJt8jkswXMQq5Ijp1ds6sleLfLeXOjRQfj+6KFyPZ2o445i2gaJPfknliTQVQSeP3vWf1It1ZvTw0ERcS+y59YbgI3CJTJf2Q9UAivxPmlC2GFoxzDHysE8oho1WhqLvLnxj/t4P1AXt7osus4k+NsR1AzPt/pujkuC/NVTmOtzzpScCTq5qIzlFhRdaEBUDQ6SJpSUw4l2dcFXcsvmFGqQ65zBB/xD+yfmA8/Gq7p3pFjhFKUIbWq5443RIiWZMvYf999nt9AJbATJd7mA3j+sxryx90A1qzpqSVZF9wlpVKb5btYa76STwkMWJGKLoxLdkMuG/u7UumvrjMlZlr0aVc8GXF3cINnupGThE0qJMuwwO8Znhjc//aK1C8Z9UT+TTc272J6rVLq66iglVw1BXOrdttYOMZp6MeVSZaR6auQad8UCFfMF6qBBF75IdaLzYh5Oargv4Hkv3dFd4UI/m2mYQ7lXvQGY01oFem+++Ut6Qd9U+rT534Ge/BOpPrdmGYeK+czjmmC2Sr8DXSlqLe4latL6bRDCKb55yDmg2R5BtSh8WChfGRYYDhWMn4tWUuso46QPbL+sFn7VqB3EZdbz/GV5+Qw3qfSWGpHjYIB3aPdRB2UdJNXCo4hOKfL1/aevv8AiiT8wefsO7j+FRlFfmLXo588Ly2rweKy8Ivd2GSyaw9x2Zha2VvqxjjEr3l1n3d1fcYnTxV4o1UYAHRwIoHtpnnp3jhVymnl77AdbPNHbMP8RyefDzueHsp6yyJEj6ZqB3WXZNG6h8XelIctYW6J+UqJGppAWFAZBkPhMSTZSWuj0CITgBD0pENO4kZMIhFfyDbLXJ7rvyURJlS82KPcVXdiIa7Y6/tADPi+/xlaeJIcLW8W474pUskd5Xwr79QtrT2n4ZMIJPZBR71igZ8Bd+NgLUthh9EalmPxgye37wJC7fbIqYMZNOUksK0d6h8Fg8yuabjnFBCNntS+NzpLaZq10JyHfom+s/6/enmFG6gZrUdVoRDYeOctNean8Ef0V/O//U3DlPrLL3ZndhsjI0CWKl3LctjX/HFJEjhWg6aLC7mGiu53MzZS0NKhMSVHJd2Gcz1AfA+zPsRrso3Mxo3drcUW3w7xMcBj4Qb5MmITVYFV0H+gamEC2AWP0RGH98/SlquMLmsIMa80e14J/nTUN+EnW9yEorp8DNc2Sv9QpvSUE1Nd6Syyd07mh1kjnWybQXBa+UT2gdVHttxsCExD03JR5NgkVyX351zSwmlZdMm9dJHee2Sa3ClBzqmW3SxKdw3/2rufcTI8PcxQ2rPhFCc6BGLvF4l6y/He0teL2wMw16V40KcL3iMQwqFMVIjA04VmvuZmp8xSYeaF2w/ykYG6TtCH7XJIc96vLTYC8HJQFhm85OY2fOl3uTC7bjet5NEXNj+T5spaEkX7UBuosfgxlVDXqpXpFHwbE76DhCJpIIG0PBGuWCGCLHsY0SS8WdBm79OX6eJqIyIU6Cw="
-  cypherverifier="klgpdVJIHlqEp5Qpj3StHA36CuWVeMf9Dd7q7yGzVlxOUd4dz1GwAOyEE8U0Bcenyz4qzv9maDWYTeSRR6s="
-  initvector="FwiJQ+vL8DUbzOU3C+5rsw=="
-  nonce="IX2FgFdt2H46Z6Dro8a7Uw=="
->
-  <div class="exclusiveMessage" style="text-align: center"></div>
-  <div class="exclusiveContent"></div>
-</div></div>
-                          <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img2.jpg');">
-                            <div class=" row col-12 d-flex" >
-                                <div class="mb-3 mx-3">Title</div>
-                                <div class="card-description d-flex flex-row justify-content-between">
-                                    <div class="d-flex col-5">
-                                        <img src="images/p-image.png" width="30%">
-                                        <h5 class="user-name m-0" id="username">name</h5>
-                                    </div>
-                                <div class="d-flex justify-content-end col-5"> 
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/download.png"/></a>
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/like.png"/></a>
-
-                                </div>
-                                </div>
-                              </div>  
-                          </div>
-                          <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img3.jpg');">
-                            <div class=" row col-12 d-flex" >
-                                <div class="mb-3 mx-3">Title</div>
-                                <div class="card-description d-flex flex-row justify-content-between">
-                                    <div class="d-flex col-5">
-                                        <img src="images/p-image.png" width="30%">
-                                        <h5 class="user-name m-0" id="username">name</h5>
-                                    </div>
-                                <div class="d-flex justify-content-end col-5"> 
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/download.png"/></a>
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/like.png"/></a>
-
-                                </div>
-                                </div>
-                              </div>  
-                          </div>
-                          <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img4.jpg');">
-                            <div class=" row col-12 d-flex" >
-                                <div class="mb-3 mx-3">Title</div>
-                                <div class="card-description d-flex flex-row justify-content-between">
-                                    <div class="d-flex col-5">
-                                        <img src="images/p-image.png" width="30%">
-                                        <h5 class="user-name m-0" id="username">name</h5>
-                                    </div>
-                                <div class="d-flex justify-content-end col-5"> 
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/download.png"/></a>
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/like.png"/></a>
-
-                                </div>
-                                </div>
-                              </div>  
-                          </div>
-                          <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img5.jpg');">
-                            <div class=" row col-12 d-flex" >
-                                <div class="mb-3 mx-3">Title</div>
-                                <div class="card-description d-flex flex-row justify-content-between">
-                                    <div class="d-flex col-5">
-                                        <img src="images/p-image.png" width="30%">
-                                        <h5 class="user-name m-0" id="username">name</h5>
-                                    </div>
-                                <div class="d-flex justify-content-end col-5"> 
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/download.png"/></a>
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/like.png"/></a>
-
-                                </div>
-                                </div>
-                              </div>  
-                          </div>
-                          <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img6.jpg');">
-                            <div class=" row col-12 d-flex" >
-                                <div class="mb-3 mx-3">Title</div>
-                                <div class="card-description d-flex flex-row justify-content-between">
-                                    <div class="d-flex col-5">
-                                        <img src="images/p-image.png" width="30%">
-                                        <h5 class="user-name m-0" id="username">name</h5>
-                                    </div>
-                                <div class="d-flex justify-content-end col-5"> 
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/download.png"/></a>
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/like.png"/></a>
-
-                                </div>
-                                </div>
-                              </div>  
-                          </div>
-                          <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img7.jpg');">
-                            <div class=" row col-12 d-flex" >
-                                <div class="mb-3 mx-3">Title</div>
-                                <div class="card-description d-flex flex-row justify-content-between">
-                                    <div class="d-flex col-5">
-                                        <img src="images/p-image.png" width="30%">
-                                        <h5 class="user-name m-0" id="username">name</h5>
-                                    </div>
-                                <div class="d-flex justify-content-end col-5"> 
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/download.png"/></a>
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/like.png"/></a>
-
-                                </div>
-                                </div>
-                              </div>  
-                          </div>
-                          <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img8.jpg');">
-                            <div class=" row col-12 d-flex" >
-                                <div class="mb-3 mx-3">Title</div>
-                                <div class="card-description d-flex flex-row justify-content-between">
-                                    <div class="d-flex col-5">
-                                        <img src="images/p-image.png" width="30%">
-                                        <h5 class="user-name m-0" id="username">name</h5>
-                                    </div>
-                                <div class="d-flex justify-content-end col-5"> 
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/download.png"/></a>
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/like.png"/></a>
-
-                                </div>
-                                </div>
-                              </div>  
-                          </div>
-                          <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img9.jpg');">
-                            <div class=" row col-12 d-flex" >
-                                <div class="mb-3 mx-3">Title</div>
-                                <div class="card-description d-flex flex-row justify-content-between">
-                                    <div class="d-flex col-5">
-                                        <img src="images/p-image.png" width="30%">
-                                        <h5 class="user-name m-0" id="username">name</h5>
-                                    </div>
-                                <div class="d-flex justify-content-end col-5"> 
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/download.png"/></a>
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/like.png"/></a>
-
-                                </div>
-                                </div>
-                              </div>  
-                          </div>
-                          <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img10.jpg');">
-                            <div class=" row col-12 d-flex" >
-                                <div class="mb-3 mx-3">Title</div>
-                                <div class="card-description d-flex flex-row justify-content-between">
-                                    <div class="d-flex col-5">
-                                        <img src="images/p-image.png" width="30%">
-                                        <h5 class="user-name m-0" id="username">name</h5>
-                                    </div>
-                                <div class="d-flex justify-content-end col-5"> 
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/download.png"/></a>
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/like.png"/></a>
-
-                                </div>
-                                </div>
-                              </div>  
-                          </div>
-                          <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img11.jpg');">
-                            <div class=" row col-12 d-flex" >
-                                <div class="mb-3 mx-3">Title</div>
-                                <div class="card-description d-flex flex-row justify-content-between">
-                                    <div class="d-flex col-5">
-                                        <img src="images/p-image.png" width="30%">
-                                        <h5 class="user-name m-0" id="username">name</h5>
-                                    </div>
-                                <div class="d-flex justify-content-end col-5"> 
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/download.png"/></a>
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/like.png"/></a>
-
-                                </div>
-                                </div>
-                              </div>  
-                          </div>
-                          <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img12.jpg');">
-                            <div class=" row col-12 d-flex" >
-                                <div class="mb-3 mx-3">Title</div>
-                                <div class="card-description d-flex flex-row justify-content-between">
-                                    <div class="d-flex col-5">
-                                        <img src="images/p-image.png" width="30%">
-                                        <h5 class="user-name m-0" id="username">name</h5>
-                                    </div>
-                                <div class="d-flex justify-content-end col-5"> 
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/download.png"/></a>
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/like.png"/></a>
-
-                                </div>
-                                </div>
-                              </div>  
-                          </div>
-                          <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img13.jpg');">
-                            <div class=" row col-12 d-flex" >
-                                <div class="mb-3 mx-3">Title</div>
-                                <div class="card-description d-flex flex-row justify-content-between">
-                                    <div class="d-flex col-5">
-                                        <img src="images/p-image.png" width="30%">
-                                        <h5 class="user-name m-0" id="username">name</h5>
-                                    </div>
-                                <div class="d-flex justify-content-end col-5"> 
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/download.png"/></a>
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/like.png"/></a>
-
-                                </div>
-                                </div>
-                              </div>  
-                          </div>
-                          <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img14.jpg');">
-                            <div class=" row col-12 d-flex" >
-                                <div class="mb-3 mx-3">Title</div>
-                                <div class="card-description d-flex flex-row justify-content-between">
-                                    <div class="d-flex col-5">
-                                        <img src="images/p-image.png" width="30%">
-                                        <h5 class="user-name m-0" id="username">name</h5>
-                                    </div>
-                                <div class="d-flex justify-content-end col-5"> 
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/download.png"/></a>
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/like.png"/></a>
-
-                                </div>
-                                </div>
-                              </div>  
-                          </div>
-                          <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3" id="getImage" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img15.jpg');">
-                            <div class=" row col-12 d-flex" >
-                                <div class="mb-3 mx-3">Title</div>
-                                <div class="card-description d-flex flex-row justify-content-between">
-                                    <div class="d-flex col-5">
-                                        <img src="images/p-image.png" width="30%">
-                                        <h5 class="user-name m-0" id="username">name</h5>
-                                    </div>
-                                <div class="d-flex justify-content-end col-5"> 
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/download.png"/></a>
-                                     <a class="" href="images/searchImage/img1.jpg" download><img src="images/like.png"/></a>
-
-                                </div>
-                                </div>
-                              </div>  
-                          </div>
+                            </div> -->
                         </div>
-                      </div>
+                        <div
+                            class="col-12 d-flex flex-column flex-sm-column flex-md-row flex-wrap justify-content-center align-items-center mt-5">
+                            <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3"
+                                id="getImage"
+                                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img1.jpg');">
+                                <div class=" row col-12 d-flex">
+                                    <div class="mb-3 mx-3">Concert</div>
+                                    <div class="card-description d-flex flex-row justify-content-between">
+                                        <div class="d-flex col-5">
+                                            <img src="images/p-image.png" width="30%">
+                                            <h5 class="user-name m-0" id="username">Flexxi</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-end col-5">
+                                            <a href="images/searchImage/img1.jpg" class="mx-2" download><img
+                                                    src="images/download.png" /></a>
+                                            <a class="like" href="#"><img src="images/like.png" /></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="card-link" href="download-image.html"></a>
+                            </div>
+                            <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3"
+                                id="getImage"
+                                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img15.jpg');">
+                                <div class="text-center visible col-10 m-auto" id="visible">
+                                    <img src="images/Exclusive.png" width="40px" class="d-flex align-self-center" />
+                                    <p>
+                                        ----⏰Waiting for web monetization verification to onlock this content----
+                                    </p>
+                                </div>
+                                <div class=" row col-12 hidden" id="exclusive">
+                                    <img src="images/Exclusive.png" width="60px" height="40px" class=" m-4"
+                                        style="top: -100px; width: 60px;" />
+
+                                    <div class="mb-3 mx-3">Black Dog With Open Tongue</div>
+                                    <div class="card-description d-flex flex-row justify-content-between">
+                                        <div class="d-flex col-5">
+                                            <img src="images/p-image.png" width="30%">
+                                            <h5 class="user-name m-0" id="username">Flexxi</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-end col-5">
+                                            <a class="mx-2" href="images/searchImage/img15.jpg" download><img
+                                                    src="images/download.png" /></a>
+                                            <a class="like" href="#"><img src="images/like.png" /></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3"
+                                id="getImage"
+                                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img2.jpg');">
+                                <div class=" row col-12 d-flex">
+                                    <div class="mb-3 mx-3">Food Platter</div>
+                                    <div class="card-description d-flex flex-row justify-content-between">
+                                        <div class="d-flex col-5">
+                                            <img src="images/p-image.png" width="30%">
+                                            <h5 class="user-name m-0" id="username">Flexxi</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-end col-5">
+                                            <a class="mx-2" href="images/searchImage/img2.jpg" download><img
+                                                    src="images/download.png" /></a>
+                                            <a class="like" href="#"><img src="images/like.png" /></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3"
+                                id="getImage"
+                                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img3.jpg');">
+                                <div class="text-center visible col-10 m-auto" id="visible1">
+                                    <img src="images/Exclusive.png" width="40px" class="d-flex align-self-center" />
+                                    <p>
+                                        ----⏰Waiting for web monetization verification to onlock this content----
+                                    </p>
+                                </div>
+                                <div class=" row col-12 hidden" id="exclusive1">
+                                    <img src="images/Exclusive.png" width="60px" height="40px" class=" m-4"
+                                        style="top: -100px; width: 60px;" />
+
+                                    <div class="mb-3 mx-3">Black Dog With Open Tongue</div>
+                                    <div class="card-description d-flex flex-row justify-content-between">
+                                        <div class="d-flex col-5">
+                                            <img src="images/p-image.png" width="30%">
+                                            <h5 class="user-name m-0" id="username">Flexxi</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-end col-5">
+                                            <a class="mx-2" href="images/searchImage/img3.jpg" download><img
+                                                    src="images/download.png" /></a>
+                                            <a class="like" href="#"><img src="images/like.png" /></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3"
+                                id="getImage"
+                                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img4.jpg');">
+                                <div class=" row col-12 d-flex">
+                                    <div class="mb-3 mx-3">Friends With Drink</div>
+                                    <div class="card-description d-flex flex-row justify-content-between">
+                                        <div class="d-flex col-5">
+                                            <img src="images/p-image.png" width="30%">
+                                            <h5 class="user-name m-0" id="username">Flexxi</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-end col-5">
+                                            <a class="mx-2" href="images/searchImage/img4.jpg" download><img
+                                                    src="images/download.png" /></a>
+                                            <a class="like" href="#"><img src="images/like.png" /></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3"
+                                id="getImage"
+                                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img17.jpg');">
+                                <div class="text-center visible col-10 m-auto" id="visible2">
+                                    <img src="images/Exclusive.png" width="40px" class="d-flex align-self-center" />
+                                    <p>
+                                        ----⏰Waiting for web monetization verification to onlock this content----
+                                    </p>
+                                </div>
+                                <div class=" row col-12 hidden" id="exclusive2">
+                                    <img src="images/Exclusive.png" width="60px" height="40px" class=" m-4"
+                                        style="top: -100px; width: 60px;" />
+
+                                    <div class="mb-3 mx-3">Black Dog With Open Tongue</div>
+                                    <div class="card-description d-flex flex-row justify-content-between">
+                                        <div class="d-flex col-5">
+                                            <img src="images/p-image.png" width="30%">
+                                            <h5 class="user-name m-0" id="username">Flexxi</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-end col-5">
+                                            <a class="mx-2" href="images/searchImage/img5.jpg" download><img
+                                                    src="images/download.png" /></a>
+                                            <a class="like" href="#"><img src="images/like.png" /></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3"
+                                id="getImage"
+                                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img5.jpg');">
+                                <div class=" row col-12 d-flex">
+                                    <div class="mb-3 mx-3">Black Dog With Open Tongue</div>
+                                    <div class="card-description d-flex flex-row justify-content-between">
+                                        <div class="d-flex col-5">
+                                            <img src="images/p-image.png" width="30%">
+                                            <h5 class="user-name m-0" id="username">Flexxi</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-end col-5">
+                                            <a class="mx-2" href="images/searchImage/img5.jpg" download><img
+                                                    src="images/download.png" /></a>
+                                            <a class="like" href="#"><img src="images/like.png" /></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3"
+                                id="getImage"
+                                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img6.jpg');">
+                                <div class=" row col-12 d-flex">
+                                    <div class="mb-3 mx-3">Ice Cream</div>
+                                    <div class="card-description d-flex flex-row justify-content-between">
+                                        <div class="d-flex col-5">
+                                            <img src="images/p-image.png" width="30%">
+                                            <h5 class="user-name m-0" id="username">Flexxi</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-end col-5">
+                                            <a class="mx-2" href="images/searchImage/img6.jpg" download><img
+                                                    src="images/download.png" /></a>
+                                            <a class="like" href="#"><img src="images/like.png" /></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3"
+                                id="getImage"
+                                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img7.jpg');">
+                                <div class=" row col-12 d-flex">
+                                    <div class="mb-3 mx-3">Cloth Rack</div>
+                                    <div class="card-description d-flex flex-row justify-content-between">
+                                        <div class="d-flex col-5">
+                                            <img src="images/p-image.png" width="30%">
+                                            <h5 class="user-name m-0" id="username">Flexxi</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-end col-5">
+                                            <a class="mx-2" href="images/searchImage/img7.jpg" download><img
+                                                    src="images/download.png" /></a>
+                                            <a class="like" href="#"><img src="images/like.png" /></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3"
+                                id="getImage"
+                                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img8.jpg');">
+                                <div class=" row col-12 d-flex">
+                                    <div class="mb-3 mx-3">Blue Heels</div>
+                                    <div class="card-description d-flex flex-row justify-content-between">
+                                        <div class="d-flex col-5">
+                                            <img src="images/p-image.png" width="30%">
+                                            <h5 class="user-name m-0" id="username">flexxi</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-end col-5">
+                                            <a class="mx-2" href="images/searchImage/img8.jpg" download><img
+                                                    src="images/download.png" /></a>
+                                            <a class="like" href="#"><img src="images/like.png" /></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3"
+                                id="getImage"
+                                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img9.jpg');">
+                                <div class=" row col-12 d-flex">
+                                    <div class="mb-3 mx-3">Family Ties</div>
+                                    <div class="card-description d-flex flex-row justify-content-between">
+                                        <div class="d-flex col-5">
+                                            <img src="images/p-image.png" width="30%">
+                                            <h5 class="user-name m-0" id="username">Flexxi</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-end col-5">
+                                            <a class="mx-2" href="images/searchImage/img9.jpg" download><img
+                                                    src="images/download.png" /></a>
+                                            <a class="like" href="#"><img src="images/like.png" /></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3"
+                                id="getImage"
+                                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img10.jpg');">
+                                <div class="text-center visible col-10 m-auto" id="visible3">
+                                    <img src="images/Exclusive.png" width="40px" class="d-flex align-self-center" />
+                                    <p>
+                                        ----⏰Waiting for web monetization verification to onlock this content----
+                                    </p>
+                                </div>
+                                <div class=" row col-12 hidden" id="exclusive3">
+                                    <img src="images/Exclusive.png" width="60px" height="40px" class=" m-4"
+                                        style="top: -100px; width: 60px;" />
+
+                                    <div class="mb-3 mx-3">Black Dog With Open Tongue</div>
+                                    <div class="card-description d-flex flex-row justify-content-between">
+                                        <div class="d-flex col-5">
+                                            <img src="images/p-image.png" width="30%">
+                                            <h5 class="user-name m-0" id="username">Flexxi</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-end col-5">
+                                            <a class="mx-2" href="images/searchImage/img10.jpg" download><img
+                                                    src="images/download.png" /></a>
+                                            <a class="like" href="#"><img src="images/like.png" /></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3"
+                                id="getImage"
+                                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img11.jpg');">
+                                <div class=" row col-12 d-flex">
+                                    <div class="mb-3 mx-3">Business Meeting</div>
+                                    <div class="card-description d-flex flex-row justify-content-between">
+                                        <div class="d-flex col-5">
+                                            <img src="images/p-image.png" width="30%">
+                                            <h5 class="user-name m-0" id="username">Flexxi</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-end col-5">
+                                            <a class="mx-2" href="images/searchImage/img11.jpg" download><img
+                                                    src="images/download.png" /></a>
+                                            <a class="like" href="#"><img src="images/like.png" /></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3"
+                                id="getImage"
+                                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img12.jpg');">
+                                <div class=" row col-12 d-flex">
+                                    <div class="mb-3 mx-3">People Discussing a Project</div>
+                                    <div class="card-description d-flex flex-row justify-content-between">
+                                        <div class="d-flex col-5">
+                                            <img src="images/p-image.png" width="30%">
+                                            <h5 class="user-name m-0" id="username">Flexxi</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-end col-5">
+                                            <a class="mx-2" href="images/searchImage/img12.jpg" download><img
+                                                    src="images/download.png" /></a>
+                                            <a class="like" href="#"><img src="images/like.png" /></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3"
+                                id="getImage"
+                                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img13.jpg');">
+                                <div class=" row col-12 d-flex">
+                                    <div class="mb-3 mx-3">Pink and Brown Jellyfish</div>
+                                    <div class="card-description d-flex flex-row justify-content-between">
+                                        <div class="d-flex col-5">
+                                            <img src="images/p-image.png" width="30%">
+                                            <h5 class="user-name m-0" id="username">Flexxi</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-end col-5">
+                                            <a class="mx-2" href="images/searchImage/img13.jpg" download><img
+                                                    src="images/download.png" /></a>
+                                            <a class="like" href="#"><img src="images/like.png" /></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3"
+                                id="getImage"
+                                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img14.jpg');">
+                                <div class="text-center visible col-10 m-auto" id="visible4">
+                                    <img src="images/Exclusive.png" width="40px" class="d-flex align-self-center" />
+                                    <p>
+                                        ----⏰Waiting for web monetization verification to onlock this content----
+                                    </p>
+                                </div>
+                                <div class=" row col-12 hidden" id="exclusive4">
+                                    <img src="images/Exclusive.png" width="60px" height="40px" class=" m-4"
+                                        style="top: -100px; width: 60px;" />
+
+                                    <div class="mb-3 mx-3">Black Dog With Open Tongue</div>
+                                    <div class="card-description d-flex flex-row justify-content-between">
+                                        <div class="d-flex col-5">
+                                            <img src="images/p-image.png" width="30%">
+                                            <h5 class="user-name m-0" id="username">Flexxi</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-end col-5">
+                                            <a class="mx-2" href="images/searchImage/img14.jpg" download><img
+                                                    src="images/download.png" /></a>
+                                            <a class="like" href="#"><img src="images/like.png" /></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3"
+                                id="getImage"
+                                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img5.jpg');">
+                                <div class=" row col-12 d-flex">
+                                    <div class="mb-3 mx-3">Black Dog With Open Tongue</div>
+                                    <div class="card-description d-flex flex-row justify-content-between">
+                                        <div class="d-flex col-5">
+                                            <img src="images/p-image.png" width="30%">
+                                            <h5 class="user-name m-0" id="username">Flexxi</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-end col-5">
+                                            <a class="mx-2" href="images/searchImage/img5.jpg" download><img
+                                                    src="images/download.png" /></a>
+                                            <a class="like" href="#"><img src="images/like.png" /></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card d-flex justify-content-end mx-3 col-10 col-sm-8 col-md-4 col-lg-3"
+                                id="getImage"
+                                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/searchImage/img6.jpg');">
+                                <div class=" row col-12 d-flex">
+                                    <div class="mb-3 mx-3">Ice Cream</div>
+                                    <div class="card-description d-flex flex-row justify-content-between">
+                                        <div class="d-flex col-5">
+                                            <img src="images/p-image.png" width="30%">
+                                            <h5 class="user-name m-0" id="username">Flexxi</h5>
+                                        </div>
+                                        <div class="d-flex justify-content-end col-5">
+                                            <a class="mx-2" href="images/searchImage/img6.jpg" download><img
+                                                    src="images/download.png" /></a>
+                                            <a class="like" href="#"><img src="images/like.png" /></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
             </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+            <a href="#" class="btn border-primary">Load More...</a>
         </div>
     </section>
 
@@ -432,9 +658,10 @@
             <div class="row">
                 <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
                     <a href="#" class="logo-footer text-light">
-                            <img src="images/logo.png" height="40" alt=""><span> Flexxi </span>
-                        </a>
-                    <p class="mt-4">We provide you exclusive articles, images, templates and tutorials at a fee; and also give you the access
+                        <img src="images/logo.png" height="40" alt=""><span> Flexxi </span>
+                    </a>
+                    <p class="mt-4">We provide you exclusive articles, images, templates and tutorials at a fee; and
+                        also give you the access
                         to monetize your content.</p>
                 </div>
                 <!--end col-->
@@ -453,10 +680,14 @@
                 <div class="col-lg-3 col-md-4 col-12 mb-5 mb-lg-0">
                     <h5 class="text-light footer-head">Company</h5>
                     <ul class="list-unstyled footer-list mt-4">
-                        <li><a href="page-terms.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
-                        <li><a href="page-privacy.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Guides & Help</a></li>
-                        <li><a href="documentation.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Career</a></li>
-                        <li><a href="changelog.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Terms & Policy</a></li>
+                        <li><a href="page-terms.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i>
+                                About us</a></li>
+                        <li><a href="page-privacy.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i>
+                                Guides & Help</a></li>
+                        <li><a href="documentation.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i>
+                                Career</a></li>
+                        <li><a href="changelog.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Terms
+                                & Policy</a></li>
                     </ul>
                 </div>
                 <!--end col-->
@@ -464,8 +695,10 @@
                 <div class="col-lg-3 col-md-4 col-12 mb-5 mb-lg-0">
                     <h5 class="text-light footer-head">Support</h5>
                     <ul class="list-unstyled footer-list mt-4">
-                        <li><a href="page-terms.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> Contact us</a></li>
-                        <li><a href="page-privacy.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i> FAQ</a></li>
+                        <li><a href="page-terms.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i>
+                                Contact us</a></li>
+                        <li><a href="page-privacy.html" class="text-light"><i class="uil uil-angle-right-b me-1"></i>
+                                FAQ</a></li>
                     </ul>
                 </div>
                 <!--end col-->
@@ -484,18 +717,24 @@
                         <p class="mb-0">Copyright©
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> Flexxi <i class="mdi mdi-heart text-danger"></i> by <a href="https://shreethemes.in/"
-                                target="_blank" class="text-reset">All right reserved</a>.</p>
+                            </script> Flexxi <i class="mdi mdi-heart text-danger"></i> by <a
+                                href="https://shreethemes.in/" target="_blank" class="text-reset">All right
+                                reserved</a>.
+                        </p>
                     </div>
                 </div>
                 <!--end col-->
 
                 <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
                     <ul class="list-unstyled text-sm-end mb-0">
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social text-light"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social text-light"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social text-light"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social text-light"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                                    data-feather="facebook" class="fea icon-sm fea-social text-light"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                                    data-feather="instagram" class="fea icon-sm fea-social text-light"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                                    data-feather="twitter" class="fea icon-sm fea-social text-light"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i
+                                    data-feather="linkedin" class="fea icon-sm fea-social text-light"></i></a></li>
                     </ul>
                 </div>
                 <!--end col-->
@@ -508,27 +747,67 @@
     <!-- Footer End -->
 
     <!-- Back to top -->
-    <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+    <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i
+            data-feather="arrow-up" class="icons"></i></a>
     <!-- Back to top -->
-    <script src="https://webmonetization.org/js/exclusive-content.js"></script>
+
+
     <script>
 
-    if (document.monetization) {
-        console.log(document)
+        if (document.monetization) {
+
+            document.monetization.addEventListener("monetizationstart", () => {
+                document.getElementById('visible').classList.remove('visible')
+                document.getElementById('visible1').classList.remove('visible')
+                document.getElementById('visible2').classList.remove('visible')
+                document.getElementById('visible3').classList.remove('visible')
+                document.getElementById('visible4').classList.remove('visible')
+                document.getElementById('visible').classList.add('hidden')
+                document.getElementById('visible1').classList.add('hidden')
+                document.getElementById('visible2').classList.add('hidden')
+                document.getElementById('visible3').classList.add('hidden')
+                document.getElementById('visible4').classList.add('hidden')
+                document.getElementById('exclusive').classList.remove('hidden')
+                document.getElementById('exclusive1').classList.remove('hidden')
+                document.getElementById('exclusive2').classList.remove('hidden')
+                document.getElementById('exclusive3').classList.remove('hidden')
+                document.getElementById('exclusive4').classList.remove('hidden')
+
+                console.log(
+                    "🎉 Awesome ! You use Web Monetization.\nMore information https://webmonetization.org"
+                );
+            });
+
+            // document.monetization.addEventListener('monetizationprogress', async event => {
+            //     // A payment has been received.
+
+            //     // Connect to your site’s backend to validate the payment. This does NOT connect directly to the receipt verifier.
+            //     const res = await fetch('/verifyReceipt', {
+            //       method: 'POST',
+            //       headers: {
+            //         'Content-Type': 'application/json'
+            //       },
+            //       body: JSON.stringify({
+            //         receipt: event.detail.receipt
+            //       })
+            //     })
+            // })
+        }
+
+    // var images = document.getElementById("getImg");
+    // for(var i = 0; i < images.length; i++) {
+    // var image = images[i];
+    // image.onclick = function(event) {
+    //      window.location.href = this.id + '.html';
+    // };
 
 
-  document.monetization.addEventListener("monetizationstart", () => {
-    // document.getElementById('exclusive').classList.remove('hidden')
 
-    console.log(
-      "🎉 Awesome ! You use Web Monetization.\nMore information https://webmonetization.org"
-    );
-  });
-    }
-  
-        
+
+
+
     </script>
-    
+
     <!-- javascript -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- SLIDER -->
