@@ -1,2 +1,4 @@
 download-image.html
 user-profile.html
+# Local Netlify folder
+.netlify
